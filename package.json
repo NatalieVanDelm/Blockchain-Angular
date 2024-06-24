@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "elliptic": "^6.5.5",
     "crypto-js": "^4.2.0"
   }
 }
