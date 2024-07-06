@@ -3,13 +3,13 @@ import { ec, SignatureInput } from 'elliptic';
 const secp = new ec('secp256k1');
 
 export class Transaction {
-    fromAddress: string;
-    toAddress: string;
-    amount: number;
-    timestamp: string;
-    signature: SignatureInput = '';
+    public fromAddress: string;
+    public toAddress: string;
+    public amount: number;
+    public timestamp: string;
+    public signature: SignatureInput = '';
 
-    constructor(fromAddress: string, toAddress: string, amount: number) {
+    constructor(fromAddress: string = '', toAddress: string = '', amount: number = 0) {
         this.fromAddress = fromAddress;
         this.toAddress = toAddress;
         this.amount = amount;
